@@ -19,7 +19,7 @@ A personal dashboard and portfolio page featuring a real-time live clock, dynami
 - **Lucide Icons & Google Fonts** (Plus Jakarta Sans & JetBrains Mono)
 
 ## 📦 Getting Started
-Simply open `index.html` or visit [My Personal Page](https://helen861230-ux.github.io/0914PersonalPage/) in any modern web browser.
+Simply open [index.html](https://helen861230-ux.github.io/0914PersonalPage/) (or visit [My Personal Page](https://helen861230-ux.github.io/0914PersonalPage/)) in any modern web browser.
 
 ---
 *Created with ❤️ by 陳意涵 (Helen Chen)*
