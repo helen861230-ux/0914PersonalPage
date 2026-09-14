@@ -1,5 +1,7 @@
 # 0914PersonalPage — 陳意涵 (Helen Chen)
 
+🌐 **Live Website**: [https://helen861230-ux.github.io/0914PersonalPage/](https://helen861230-ux.github.io/0914PersonalPage/)
+
 A personal dashboard and portfolio page featuring a real-time live clock, dynamic day progress, and responsive modern glassmorphism design.
 
 ## 🚀 Key Features
