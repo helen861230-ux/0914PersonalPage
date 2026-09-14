@@ -1,24 +1,23 @@
-# 0914PersonalPage
+# 0914PersonalPage — 陳意涵 (Helen Chen)
 
-Welcome to the **Personal Page** repository.
+A personal dashboard and portfolio page featuring a real-time live clock, dynamic day progress, and responsive modern glassmorphism design.
 
-## 📌 About
-This repository hosts the source code and assets for my personal portfolio and web profile.
-
-## 🚀 Features
-- 🎨 Modern & responsive design
-- 📱 Mobile-friendly layout
-- ⚡ Fast performance & clean architecture
+## 🚀 Key Features
+- 👤 **Personal Profile**: Interactive profile card for **陳意涵 (Helen Chen)** with skill tags, status indicator, and quick links.
+- ⏰ **Live Real-Time Clock**: High-precision hours, minutes, seconds counter with UTC timezone sync.
+- 🌅 **Dynamic Greeting**: Automatically changes greeting (Good Morning / Afternoon / Evening / Night) based on the current time.
+- 📊 **Day Progress Bar**: Visual tracker for percentage of the day elapsed.
+- 🌓 **Dark / Light Mode**: Seamless theme switching with stored user preference.
+- 💬 **Interactive Inspiration Cards**: Live session uptime and design quotes switcher.
 
 ## 🛠️ Tech Stack
-- HTML5 / CSS3 / JavaScript
+- **HTML5** (Semantic structure)
+- **Vanilla CSS3** (Glassmorphism, custom CSS variables, responsive grid)
+- **Vanilla JavaScript** (Real-time clock engine, DOM manipulation)
+- **Lucide Icons & Google Fonts** (Plus Jakarta Sans & JetBrains Mono)
 
 ## 📦 Getting Started
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/helen861230-ux/0914PersonalPage.git
-   ```
-2. Open `index.html` in your browser or run a local web server.
+Simply open [index.html](file:///Users/chenyihan/Desktop/L02/index.html) in any modern web browser or host with GitHub Pages.
 
 ---
-*Created with ❤️ by helen861230-ux*
+*Created with ❤️ by 陳意涵 (Helen Chen)*
