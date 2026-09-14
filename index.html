@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>陳意涵 (Helen Chen) | Personal Space</title>
+  <meta name="description" content="Personal portfolio and live dashboard of 陳意涵 (Helen Chen)." />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="glow-bg glow-1"></div>
+  <div class="glow-bg glow-2"></div>
+  <div class="glow-bg glow-3"></div>
+
+  <div class="container">
+    <!-- Header / Navigation Bar -->
+    <header class="glass-header">
+      <div class="brand">
+        <span class="brand-avatar">YC</span>
+        <span class="brand-title">陳意涵 <span class="accent-text">/ Helen</span></span>
+      </div>
+      <div class="header-actions">
+        <div class="status-pill" id="statusPill">
+          <span class="status-dot"></span>
+          <span class="status-text">Available for collabs</span>
+        </div>
+        <button id="themeToggle" class="icon-btn" title="Toggle Theme" aria-label="Toggle Theme">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Grid -->
+    <main class="grid-layout">
+      <!-- Hero / Profile Card -->
+      <section class="card profile-card">
+        <div class="profile-header">
+          <div class="avatar-wrapper">
+            <div class="avatar-ring"></div>
+            <div class="avatar-inner">
+              <span class="avatar-text">意涵</span>
+            </div>
+            <div class="badge-online" title="Online & Active"></div>
+          </div>
+          <div class="profile-info">
+            <div class="greeting-badge" id="greetingBadge">
+              <i data-lucide="sparkles"></i>
+              <span id="dynamicGreeting">Good Evening</span>
+            </div>
+            <h1 class="hero-name">陳意涵 <span class="sub-name">(Helen Chen)</span></h1>
+            <p class="hero-bio">
+              Designer, Creator & Web Developer crafting intuitive, high-impact digital experiences.
+            </p>
+          </div>
+        </div>
+
+        <div class="tags-container">
+          <span class="tag"><i data-lucide="layout"></i> UI/UX Design</span>
+          <span class="tag"><i data-lucide="code-2"></i> Frontend Dev</span>
+          <span class="tag"><i data-lucide="palette"></i> Product Design</span>
+          <span class="tag"><i data-lucide="terminal"></i> Problem Solver</span>
+        </div>
+
+        <div class="profile-footer">
+          <div class="location-badge">
+            <i data-lucide="map-pin"></i>
+            <span>Taipei / Remote</span>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/helen861230-ux" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+              <i data-lucide="github"></i>
+            </a>
+            <button id="copyEmailBtn" class="social-btn copy-btn" title="Copy Contact" aria-label="Copy Contact Email">
+              <i data-lucide="mail"></i>
+              <span class="tooltip" id="emailTooltip">Copy email</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Live Clock & Timezone Card -->
+      <section class="card time-card">
+        <div class="card-header">
+          <div class="card-title-group">
+            <div class="icon-circle time-icon-circle">
+              <i data-lucide="clock"></i>
+            </div>
+            <div>
+              <h2 class="card-title">Live Clock</h2>
+              <p class="card-subtitle">Real-time local synchronization</p>
+            </div>
+          </div>
+          <div class="tz-badge" id="timezoneBadge">UTC+8</div>
+        </div>
+
+        <!-- Big Digital Display -->
+        <div class="clock-display-wrapper">
+          <div class="digital-clock" id="digitalClock">
+            <div class="time-unit-box">
+              <span class="time-val" id="hours">00</span>
+              <span class="time-label">HOURS</span>
+            </div>
+            <span class="time-colon">:</span>
+            <div class="time-unit-box">
+              <span class="time-val" id="minutes">00</span>
+              <span class="time-label">MINUTES</span>
+            </div>
+            <span class="time-colon">:</span>
+            <div class="time-unit-box seconds-box">
+              <span class="time-val" id="seconds">00</span>
+              <span class="time-label">SECONDS</span>
+            </div>
+            <span class="period-badge" id="period">PM</span>
+          </div>
+
+          <!-- Date & Day Info -->
+          <div class="date-display" id="dateDisplay">
+            <i data-lucide="calendar"></i>
+            <span id="fullDate">Monday, September 14, 2026</span>
+          </div>
+        </div>
+
+        <!-- Time Progress Bar for Current Day -->
+        <div class="day-progress-container">
+          <div class="progress-header">
+            <span>Day Progress</span>
+            <span id="dayProgressPercent">0%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-bar" id="dayProgressBar"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Interactive Stats / Highlights -->
+      <section class="card highlight-card">
+        <div class="stat-item">
+          <div class="stat-icon-box orange">
+            <i data-lucide="coffee"></i>
+          </div>
+          <div class="stat-content">
+            <span class="stat-number">Focus Mode</span>
+            <span class="stat-desc">Crafting great software</span>
+          </div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-icon-box purple">
+            <i data-lucide="compass"></i>
+          </div>
+          <div class="stat-content">
+            <span class="stat-number" id="uptimeCounter">00:00:00</span>
+            <span class="stat-desc">Session active</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Quote / Status Card -->
+      <section class="card quote-card">
+        <div class="quote-content">
+          <i data-lucide="quote" class="quote-icon"></i>
+          <p class="quote-text" id="dailyQuote">
+            "Design is not just what it looks like and feels like. Design is how it works."
+          </p>
+          <span class="quote-author" id="quoteAuthor">— Steve Jobs</span>
+        </div>
+        <button id="newQuoteBtn" class="refresh-quote-btn" title="Get another inspiration">
+          <i data-lucide="refresh-cw"></i>
+          <span>New Quote</span>
+        </button>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="glass-footer">
+      <p>© <span id="currentYear">2026</span> <strong>陳意涵 (Helen Chen)</strong> • Built with modern web standards</p>
+      <div class="footer-links">
+        <a href="https://github.com/helen861230-ux/0914PersonalPage" target="_blank" rel="noopener noreferrer">
+          <i data-lucide="git-fork"></i> View on GitHub
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
